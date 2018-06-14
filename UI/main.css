@@ -47,7 +47,7 @@ nav p{
 /*Style the links inside the navigation bar */
  a {
   float: left;
-  color: blueviolet;
+  color: white;
   text-align: center;
   padding: 0 20px;
   text-decoration: none;
@@ -140,18 +140,24 @@ a.signup_index {
   font-size:17px;
   float: right;
 }
+/*Class for input for sign up*/
+.margin-setiing{
+  margin-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 70px;
+  margin-left:-100px;
+  text-align: center;
+  margin-right: 40px;
+}
+#submit_signin {
+  margin-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left:-100px;
 
-/*first div of the  index page*/
-.firstdiv {
-    text-align: center;
 }
-/* the first heading of the index page*/
-.firsthead{
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
- 
-}
+
+
 /*Sign up form*/
 #form1 {
     margin-left: 40px;
@@ -159,18 +165,15 @@ a.signup_index {
     margin-top: 40px;
     margin-bottom: 100px
 }
-/*Class for input for sign up*/
-.margin-setiing{
-    margin-bottom: 40px;
-}
+
 /* sytles for all input*/
 input[type=text]{
-    width:80%;
+    width:65%;
     padding: 10px;
 
 }
 input[type=password]{
-    width:80%;
+    width:65%;
     padding: 10px;
 }
 /*sty;es for the sigmup heading. yhough they dont work haha*/
@@ -191,10 +194,6 @@ input[type=password]{
     font-size: 16px;
     border-radius: 12px;
 }
-/* Styles for the Login form*/
- h1, h2, h3, h4, h5, h6, a {
-    margin:0; padding:0;
-  }
 
   .login {
     margin:0 auto;
@@ -275,6 +274,7 @@ input[type=password]{
 
 
   #table_div{
+    float: left;
    order:.5px solid #000;
    background: white;
    border-radius:10px;
@@ -295,6 +295,7 @@ input[type=password]{
   }
 
   #table_div2{
+    float: right;
     order:.5px solid #000;
     background: white;
     border-radius:10px;
@@ -314,70 +315,6 @@ input[type=password]{
   
    }
  
-  .table1{
-   /*border="1" frame =void rules=rows class="request_table" align='center'*/
-   border: 1px;
-   align-content: center;
- 
-  }
-  /*status of the request*/
-  h2.table_buttons{
-    color: #000;
-    height: 20px;
-    padding: 0.15em 4px;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 15px;
-    border-radius: 2px;
-    box-shadow: inset 0 -1px 0 rgba(27,31,35,0.12)
-  }
-  h2#new{
-    background-color: yellow;
-   width: 30px;
-   
-  }
-  h2#reject{
-    background-color: red;
-    width: 60px;
-  }
-  h2#approve{
-    background-color: green;
-    width: 70px;
-  }
-  
-  h2#pending {
-    background-color: rgb(4, 120, 173);
-    width: 80px;
-  }
-  h2#maintenance{
-    background-color: rgba(39, 38, 39, 0.315);
-    width: 90px;
-    margin-left: 100px;
-    position: relative;
-    top: 25px;
-}
-h2#repair{
-  background-color: rgba(224, 108, 12, 0.918);
-    width: 40px;
-    margin-left: 100px;
-    position: relative;
-    top: 25px;
-
-}
- /* table.table1{
-    border-collapse: collapse;
-    width:100%;
-  }
-  table.table1, th.TableHead, td.TableData  {
-    table-layout: fixed;
-    border: 1px solid black;
-    text-align: left;
-    height: 40px;
-  }
-  table.table1, th.TableHead, td.TableData {
-   width: 170px;
-  }
- */
   .footer {
     position: fixed;
     left: 0;
@@ -388,22 +325,6 @@ h2#repair{
     text-align: center;
     float: center;
  }
- 
- /** Register Link Div **/
-
- #register {
-   text-align: center;
- }
-
- /** CSS for the form input labels **/
-
- .form_label {
-  position: relative;
-  margin: left;
-  float: left;
-  margin-left: -60px;
-  top: 34px;
- }
 
  #makeRequestBtn {
   top: 30px;
@@ -411,50 +332,11 @@ h2#repair{
   background-color: blueviolet;
  }
 
- #requestHeading {
-  position: relative;
-    left: -500px;
-    top: 80px;
- }
-
- .requestHeading {
-  position: relative;
-    left: -500px;
-    top: 80px;
- }
-
- .resolve_button {
-  margin-bottom: 20px;
-  margin-top: 15px;
-  background-color: blue
- }
  .reject_button {
    background-color: red;
  }
  .approve_button {
    background-color: green;
- }
-
- .suspend_button {
-  margin-bottom: 20px;
-  margin-top: 15px;
-  background-color: blue;
- }
- .delete_button {
-   background-color: red;
-   
-  }
-  .admin_button {
-    background-color: green;
-  }
-
- #search_bar {
-   width: 40% !important;
- }
-
- #search_button {
-  height: 40px;
-  font-size: 20px;
  }
 
  #request_filter {
@@ -477,11 +359,6 @@ h2#repair{
   border-radius: 12px;
  }
 
- #username{
-  width: 40% !important;
-  position: relative;
-  left: 110px;
- }
 
  #form1-span {
   position: relative;
@@ -499,12 +376,6 @@ h2#repair{
   
  }
 
- #form1 textarea {
-  position: relative;
-  margin-left: 60px;
-  width: 520px;
- }
-
  #user-span {
   position: relative;
   left: 60px;
@@ -516,3 +387,55 @@ h2#repair{
   font-size: 30px;
   top: 30px;
  }
+ #index-content {
+   text-align: center;
+   background-color: #292828cc;
+   padding: 20px;
+   height: 100%;
+ }
+ #index-content h2{
+   font-size: 4em;
+   color: white;
+   margin-top:2em;
+
+ }
+#index-content p {
+   color: white;
+   margin-bottom: 2em;
+   font-size: 20px;
+ }
+ #index-content h3{
+  font-size: 1.3em;
+  color: white;
+  margin:20px;
+
+}
+ .btn {
+   background-color: #4CAF50;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   min-width: 200px;
+ }
+ a#login.btn.passenger{
+   /* margin:10px; */
+   padding: 10px;
+   text-align: center !important;
+   margin-left: 50px;
+ }
+ a#login.btn.driver{
+  /* margin:10px; */
+  padding: 10px;
+  text-align: center !important;
+  margin-left: 30%;
+}
+a#login.btn.login{
+  /* margin:10px; */
+  padding: 10px;
+  text-align: center !important;
+  margin-left: 40%;
+}
