@@ -193,9 +193,11 @@ input[type=password]{
     padding: 10px;
 }
 /*sty;es for the sigmup heading. yhough they dont work haha*/
-#signupheading {
+.signupheading {
     margin-bottom:40px;
     font-size: 20px;
+    color: white;
+    padding-top:40px ;
 }
 /* Styles for the submit button*/
 .button{
@@ -220,11 +222,7 @@ input[type=password]{
     text-align:center;
     font-size:300%;
   }
-  /*.login-form {
-    border:.5px solid #000;
-    
-    box-shadow:0px 0px 10px #000;
-  }*/
+  
   
   .login-form h3 {
     text-align:left;
@@ -298,7 +296,7 @@ input[type=password]{
    border-radius:10px;
    box-shadow:0px 0px 10px #000;
    box-sizing:border-box;
-   padding-top:0 7777px;
+   padding-top:0px;
    padding-bottom:10%;
    margin:0% auto;
    text-align:center;
@@ -308,6 +306,7 @@ input[type=password]{
    padding: 20px; 
    text-align: left; 
    width: 95%;
+   margin-top:-80px;
    margin-bottom: 70px;
  
   }
@@ -329,6 +328,7 @@ input[type=password]{
     padding: 20px; 
     text-align: left; 
     width: 95%;
+    margin-top:-80px;
     margin-bottom: 70px;
   
    }
