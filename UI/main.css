@@ -9,8 +9,16 @@
   text-align: center;
    background-color: #292828cc;
    padding: 20px;
-   height: 120%;
-   width: 120%;
+   height: 100%;
+ 
+}
+#translucent{
+  text-align: center;
+   background-color: #292828cc;
+   padding: 20px;
+   height: 100%;
+   margin:70px;
+ 
 }
 /* for the body*/
 body {
@@ -225,8 +233,10 @@ input[type=password]{
   }
   .login-form {
     box-sizing:border-box;
-    padding-top:15px;
-    padding-bottom:10%;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left: 10px;
+    padding-right: 30px;
     margin:5% auto;
     text-align:center;
     background:#e1e3e4;
@@ -322,6 +332,11 @@ input[type=password]{
     margin-bottom: 70px;
   
    }
+   td, th { 
+    border: solid;
+    border-width: 1px 0;
+  }
+  
  
   .footer {
     position: fixed;
@@ -371,6 +386,7 @@ input[type=password]{
  #form1-span {
   position: relative;
   left: -136px;
+  color: white;
  }
 
  #form1 select {
@@ -394,6 +410,7 @@ input[type=password]{
   position: relative;
   font-size: 30px;
   top: 30px;
+  color: white;
  }
  #index-content {
    text-align: center;
