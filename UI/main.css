@@ -4,6 +4,14 @@
     margin: auto;
     padding-top: auto; 
 }
+/* for the transculcent photo*/
+.translucent{
+  text-align: center;
+   background-color: #292828cc;
+   padding: 20px;
+   height: 120%;
+   width: 120%;
+}
 /* for the body*/
 body {
   background-image: url('carpool7.jpg');
@@ -11,7 +19,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family:"Roboto", Helvetica, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #292828cc;
   opacity: 0.9;
   /* if you don't want your side nav to show */
   overflow-x: hidden;
@@ -438,4 +446,7 @@ a#login.btn.login{
   padding: 10px;
   text-align: center !important;
   margin-left: 40%;
+}
+h1 {
+  color:whitesmoke;
 }
