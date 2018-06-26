@@ -42,14 +42,15 @@
         <form id="form1">
             <div>
                 <span id="form1-span"> Vehicle type:</span>
-                <select>
-                    <option>Type:</option>
-                    <option value="Maintenance">Boda</option>
-                    <option value="Repair">4 seater</option>
-                    <option value="Repair">Extra Large</option>
-
-
-                </select>
+                <div class="dropdown">
+                    <button class="dropbtn">Type</button>
+                    <div class="dropdown-content">
+                        <a href="#" id="dropdown">Boda</a>
+                        <a href="#" id="dropdown">4 seater</a>
+                        <a href="#" id="dropdown">Extra Large</a>
+                    </div>
+                </div>
+               
             </div>
 
             <div>
@@ -62,7 +63,7 @@
             </div>
             <form>
                 <button class="login-form" class="login-button" value="Submit" formaction="passenger.html">
-                    <span>Submit</span>
+                    <span id = "submitbtn">Submit</span>
                 </button>
             </form>
 

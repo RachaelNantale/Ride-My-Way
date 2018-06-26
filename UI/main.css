@@ -39,6 +39,7 @@ body {
   width: 100%;
   padding: 0;
   text-align: center;
+  color: white;
 }
 /*End of body styles */
 
@@ -95,7 +96,7 @@ a.textalign_right{
   a.active {
   /*background-color: #4CAF50;*/
   font-style: arial;
-  color: black;
+  color: white;
 }
 /*Styles for  the links on the right*/
 nav ul{
@@ -110,8 +111,8 @@ nav ul li{
 nav ul li a{
   display: block;
   font-family: Arial;
-  color: black;
-  font-size: 14px;
+  color: white;
+  font-size: 20px;
   padding: 22px 14px;
   text-decoration: none;
 }
@@ -234,7 +235,7 @@ input[type=password]{
     padding-top:10px;
     padding-bottom:10px;
     padding-left: 10px;
-    padding-right: 30px;
+    padding-right: 16px;
     margin:5% auto;
     text-align:center;
     background:#e1e3e4;
@@ -288,11 +289,11 @@ input[type=password]{
     align-content: center;
   }
 
-
-  #table_div{
+  .table1 {
     float: left;
    order:.5px solid #000;
-   background: white;
+   background-color: rgba(0, 0, 0, 0.5);
+
    border-radius:10px;
    box-shadow:0px 0px 10px #000;
    box-sizing:border-box;
@@ -307,14 +308,17 @@ input[type=password]{
    text-align: left; 
    width: 95%;
    margin-top:-80px;
-   margin-bottom: 70px;
- 
+   margin-bottom: 70px
+
   }
+
+  .table2
 
   #table_div2{
     float: right;
     order:.5px solid #000;
-    background: white;
+    background-color: rgba(0, 0, 0, 0.5);
+
     border-radius:10px;
     box-shadow:0px 0px 10px #000;
     box-sizing:border-box;
@@ -357,9 +361,25 @@ input[type=password]{
 
  .reject_button {
    background-color: red;
+   text-align: center;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
  }
  .approve_button {
    background-color: green;
+  text-align: center;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
  }
 
  #request_filter {
@@ -371,17 +391,48 @@ input[type=password]{
   padding-left: 20px;
  }
 
- .admin_buttons button{
-  text-align: center;
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 12px;
- }
+ .dropbtn {
+    background-color: green;
+    color: white;
+    padding: 17px;
+    padding-right: 20px;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 20px;
+    border-radius:6px;
+  }
+  a#dropdown {
+    font-size: 17x;
+  }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    padding-bottom: 1px;
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+}
+
+.dropdown-content a:hover {background-color:#ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
  #form1-span {
   position: relative;
@@ -393,6 +444,7 @@ input[type=password]{
   margin-bottom: 30px;
   height: 40px;
  }
+
 
  #request-span {
   position: relative;
